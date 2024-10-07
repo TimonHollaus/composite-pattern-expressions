@@ -1,7 +1,6 @@
-import java.nio.channels.UnresolvedAddressException;
 import java.util.*;
 
-public class sMain {
+public class TestKlasse {
       public static void main(String[] args) {
 
             Ausdruck a = new Addition(new Zahl(5), new Zahl(6));
@@ -10,7 +9,6 @@ public class sMain {
             Ausdruck p = new Potenzieren(new Zahl(5), new Zahl(6));
             Ausdruck m = new Multiplikation(new Zahl(5), new Zahl(6));
             Ausdruck d = new Division(new Zahl(5), new Zahl(6));
-
 
             System.out.println(a.darstellung());
             System.out.println(s.darstellung());
