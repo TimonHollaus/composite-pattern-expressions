@@ -1,3 +1,8 @@
+/**
+ * Superklasse für alle Zahlen, die ebenso Ausdrücke sind
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
 public class Zahl implements Ausdruck{
       double wert;
 

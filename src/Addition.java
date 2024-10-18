@@ -1,3 +1,8 @@
+/**
+ * Addiert 2 übergebene Zahlen
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
 public class Addition implements Ausdruck{
       Ausdruck a;
       Ausdruck b;

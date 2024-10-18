@@ -1,10 +1,13 @@
 import java.util.List;
-
-public class Minimum implements Ausdruck {
-      private final List<Ausdruck> ausdruecke;
+/**
+ * Gibt das Minimum einesr Ausdrucksliste zurück
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
+public class Minimum extends MinMaxRechnung {
 
       public Minimum(List<Ausdruck> ausdruecke) {
-            this.ausdruecke = ausdruecke;
+            super(ausdruecke);
       }
       @Override
       public double wert() {

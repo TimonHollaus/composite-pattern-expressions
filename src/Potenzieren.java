@@ -1,5 +1,8 @@
-import javax.imageio.ImageTranscoder;
-
+/**
+ * Potenzeirt 2 übergenene Zahlen
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
 public class Potenzieren implements Ausdruck{
       Ausdruck a;
       Ausdruck b;

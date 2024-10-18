@@ -1,5 +1,9 @@
 import java.util.*;
-
+/**
+ * Test KLasse
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
 public class TestKlasse {
       public static void main(String[] args) {
 
@@ -36,6 +40,7 @@ public class TestKlasse {
             System.out.println();
 
             Ausdruck maxAusdruck = new Maximum(Ausdruecke);
+
             System.out.println(maxAusdruck.darstellung());
       }
 }

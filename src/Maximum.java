@@ -1,10 +1,13 @@
 import java.util.*;
-
-public class Maximum implements Ausdruck{
-      private final List<Ausdruck> ausdruecke;
+/**
+ * Gibt das Maximum einesr Ausdrucksliste zurück
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
+public class Maximum extends MinMaxRechnung{
 
       public Maximum(List<Ausdruck> ausdruecke) {
-            this.ausdruecke = ausdruecke;
+          super(ausdruecke);
       }
       @Override
       public double wert() {

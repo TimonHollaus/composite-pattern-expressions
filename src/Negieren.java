@@ -1,3 +1,8 @@
+/**
+ * Negiert 2 übergenene Zahlen
+ * @author Timon Hollaus
+ * @version 18.10.2024
+ */
 public class Negieren implements Ausdruck{
       Ausdruck a;
       public Negieren(Ausdruck a){
