@@ -10,12 +10,21 @@ public class Minimum extends MinMaxRechnung {
             super(ausdruecke);
       }
       @Override
-      public double wert() {
-            return ausdruecke.stream().mapToDouble(Ausdruck::wert).min().orElse(Double.NaN);
+      public double wert() throws Exception {
+            if (ausdruecke.isEmpty()) {
+                  return 0;  // Falls die Liste leer ist, gib 0 zurück.
+            }
+            double ergebnis = ausdruecke.get(0).wert();
+            for(int i = 1; i < ausdruecke.size(); i++) {
+                  if(ausdruecke.get(i).wert() < ergebnis) {
+                        ergebnis = ausdruecke.get(i).wert();
+                  }
+            }
+            return ergebnis;
       }
 
       @Override
-      public String darstellung() {
+      public String darstellung() throws Exception {
             StringBuilder sb = new StringBuilder();
             sb.append("Minimum (");
 

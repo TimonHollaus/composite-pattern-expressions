@@ -1,22 +1,24 @@
+import java.util.EmptyStackException;
+
 /**
  * Addiert 2 übergebene Zahlen
  * @author Timon Hollaus
  * @version 18.10.2024
  */
-public class Addition implements Ausdruck{
-      Ausdruck a;
-      Ausdruck b;
+public class Addition extends BinaereAusdruecke{
       public Addition(Ausdruck a, Ausdruck b){
-            this.a = a;
-            this.b = b;
+          super(a, b);
       }
 
-      public double wert(){
+      public double wert() throws Exception {
+            if(a==null || b==null){
+                  throw new Exception("Einer der übergebenen Ausdrücke ist null");
+            }
             return a.wert() + b.wert();
       }
 
       @Override
-      public String darstellung() {
+      public String darstellung() throws Exception {
             return "(" + a.wert() + " + " + b.wert() + ") = " + this.wert();
       }
 }

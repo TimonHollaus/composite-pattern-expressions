@@ -3,20 +3,24 @@
  * @author Timon Hollaus
  * @version 18.10.2024
  */
-public class Division implements Ausdruck{
-      Ausdruck a;
-      Ausdruck b;
+public class Division extends BinaereAusdruecke{
+
       public Division(Ausdruck a, Ausdruck b){
-            this.a = a;
-            this.b = b;
+            super(a,b);
       }
       @Override
-      public double wert(){
+      public double wert() throws Exception {
+            if(a==null || b==null){
+                  throw new Exception("Einer der übergebenen Ausdrücke ist null");
+            }
+            if(b.wert() == 0){
+                  throw new ArithmeticException("Division durch 0 nicht möglich!");
+            }
             return a.wert() / b.wert();
       }
 
       @Override
-      public String darstellung() {
+      public String darstellung() throws Exception {
             return "(" + a.wert() + " / " + b.wert() + ") = " + this.wert();
       }
 }

@@ -4,6 +4,6 @@
  * @version 18.10.2024
  */
 public interface Ausdruck {
-      abstract double wert();
-      abstract String darstellung();
+      abstract double wert() throws Exception;
+      abstract String darstellung() throws Exception;
 }

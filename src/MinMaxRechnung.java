@@ -19,11 +19,11 @@ public class MinMaxRechnung implements Ausdruck {
     }
 
     @Override
-    public double wert() {
+    public double wert() throws Exception {
         return 0;
     }
     @Override
-    public String darstellung(){
+    public String darstellung() throws Exception {
         return null;
     }
 }
