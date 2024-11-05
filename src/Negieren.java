@@ -9,12 +9,18 @@ public class Negieren implements Ausdruck{
             this.a = a;
       }
 
-      public double wert(){
+      public double wert() throws Exception {
+            if(a==null){
+                  throw new Exception("Einer der übergebenen Ausdrücke ist null");
+            }
+            if(a.wert() == 0){
+                  return 0;
+            }
             return a.wert()*-1;
       }
 
       @Override
-      public String darstellung() {
+      public String darstellung() throws Exception {
             return "(" + a.wert() + " * -1 ) = " + this.wert();
       }
 }

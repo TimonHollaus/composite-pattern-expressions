@@ -5,8 +5,7 @@ import java.util.*;
  * @version 18.10.2024
  */
 public class TestKlasse {
-      public static void main(String[] args) {
-
+      public static void main(String[] args) throws Exception {
             Ausdruck a = new Addition(new Zahl(5), new Zahl(6));
             Ausdruck s = new Subtraktion(new Zahl(5), new Zahl(6));
             Ausdruck n = new Negieren(new Zahl(5));

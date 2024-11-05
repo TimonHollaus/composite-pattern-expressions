@@ -3,20 +3,20 @@
  * @author Timon Hollaus
  * @version 18.10.2024
  */
-public class Potenzieren implements Ausdruck{
-      Ausdruck a;
-      Ausdruck b;
+public class Potenzieren extends BinaereAusdruecke{
       public Potenzieren(Ausdruck a, Ausdruck b){
-            this.a = a;
-            this.b = b;
+            super(a, b);
       }
       @Override
-      public double wert(){
+      public double wert() throws Exception {
+            if(a==null || b==null){
+                  throw new Exception("Einer der übergebenen Ausdrücke ist null");
+            }
             return Math.pow(a.wert(), b.wert());
       }
 
       @Override
-      public String darstellung() {
+      public String darstellung() throws Exception {
             return "(" + a.wert() + " ^ " + b.wert() + ") = " + this.wert();
       }
 }
