@@ -6,4 +6,5 @@
 public interface Ausdruck {
       abstract double wert() throws Exception;
       abstract String darstellung() throws Exception;
+      void toString(StringBuilder sb) throws Exception;
 }

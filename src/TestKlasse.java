@@ -13,6 +13,8 @@ public class TestKlasse {
             Ausdruck m = new Multiplikation(new Zahl(5), new Zahl(6));
             Ausdruck d = new Division(new Zahl(5), new Zahl(6));
 
+            StringBuilder sb = new StringBuilder();
+
             System.out.println(a.darstellung());
             System.out.println(s.darstellung());
             System.out.println(n.darstellung());
@@ -41,5 +43,9 @@ public class TestKlasse {
             Ausdruck maxAusdruck = new Maximum(Ausdruecke);
 
             System.out.println(maxAusdruck.darstellung());
+
+
+            a.toString(sb);
+            System.out.println(sb.toString());
       }
 }

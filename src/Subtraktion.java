@@ -20,4 +20,9 @@ public class Subtraktion extends BinaereAusdruecke{
       public String darstellung() throws Exception {
             return "(" + a.wert() + " - " + b.wert() + ") = " + this.wert();
       }
+
+      @Override
+      public void toString(StringBuilder sb) throws Exception {
+            sb.append(darstellung());
+      }
 }

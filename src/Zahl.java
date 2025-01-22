@@ -18,4 +18,9 @@ public class Zahl implements Ausdruck{
       public String darstellung() {
             return "" + this.wert;
       }
+
+      @Override
+      public void toString(StringBuilder sb) throws Exception {
+            sb.append(darstellung());
+      }
 }

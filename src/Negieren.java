@@ -23,4 +23,9 @@ public class Negieren implements Ausdruck{
       public String darstellung() throws Exception {
             return "(" + a.wert() + " * -1 ) = " + this.wert();
       }
+
+      @Override
+      public void toString(StringBuilder sb) throws Exception {
+            sb.append(darstellung());
+      }
 }

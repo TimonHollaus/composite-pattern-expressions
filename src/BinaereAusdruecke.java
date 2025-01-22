@@ -6,5 +6,4 @@ public abstract class BinaereAusdruecke implements Ausdruck{
         this.a = a;
         this.b = b;
     }
-
 }

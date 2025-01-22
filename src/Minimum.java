@@ -38,4 +38,9 @@ public class Minimum extends MinMaxRechnung {
             sb.append(") = ").append(this.wert());
             return sb.toString();
       }
+
+      @Override
+      public void toString(StringBuilder sb) throws Exception {
+            sb.append(darstellung());
+      }
 }

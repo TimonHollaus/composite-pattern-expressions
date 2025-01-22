@@ -26,4 +26,9 @@ public class MinMaxRechnung implements Ausdruck {
     public String darstellung() throws Exception {
         return null;
     }
+
+    @Override
+    public void toString(StringBuilder sb) throws Exception {
+        sb.append(darstellung());
+    }
 }
